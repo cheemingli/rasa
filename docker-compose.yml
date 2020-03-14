@@ -1,0 +1,13 @@
+version: '3.0'
+
+services:
+  rasa:
+    image: cheemingli/rasa-dev:latest
+    networks: ['rasa-network']
+    ports:
+    - "5005:5005"
+    volumes:
+    - ./rasa:/app/rasa
+    command: ["run"]
+
+networks: {rasa-network: {}}

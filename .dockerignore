@@ -4,3 +4,6 @@ docs
 **/*.pyc
 **/__pycache__
 !docker/configs
+results
+data
+src
